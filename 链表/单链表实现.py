@@ -63,7 +63,7 @@ class LinkedList(object):
             self.head = Node(value, temp)
         else:
             p, post = self.head, self.head
-            for i in xrange(index):
+            for i in range(index):
                 post = p
                 p = p.next
             temp = p
@@ -79,12 +79,12 @@ class LinkedList(object):
             self.head = temp.next
         elif index == self.get_length():
             p = self.head
-            for i in xrange(self.get_length()-2):
+            for i in range(self.get_length()-2):
                 p = p.next
             p.next = 0
         else:
             p = self.head
-            for i in xrange(index-1):
+            for i in range(index-1):
                 p = p.next
             p.next = p.next.next
 
@@ -93,7 +93,7 @@ class LinkedList(object):
             print ('This is an empty linked list.')
         else:
             p, container = self.head, []
-            for _ in xrange(self.get_length()-1):
+            for _ in range(self.get_length()-1):
                 container.append(p.value)
                 p = p.next
             container.append(p.value)

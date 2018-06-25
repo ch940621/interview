@@ -12,6 +12,8 @@ class LinkedList(object):
     def __init__(self):
         self.head = 0  # 头部
 
+    
+
     def __getitem__(self, key):
         if self.is_empty():
             print ('Linked list is empty.')
@@ -63,7 +65,7 @@ class LinkedList(object):
             self.head = Node(value, temp)
         else:
             p, post = self.head, self.head
-            for i in range(index):
+            for _ in range(index):
                 post = p
                 p = p.next
             temp = p
@@ -79,12 +81,12 @@ class LinkedList(object):
             self.head = temp.next
         elif index == self.get_length():
             p = self.head
-            for i in range(self.get_length()-2):
+            for _ in range(self.get_length()-2):
                 p = p.next
             p.next = 0
         else:
             p = self.head
-            for i in range(index-1):
+            for _ in range(index-1):
                 p = p.next
             p.next = p.next.next
 
@@ -132,3 +134,10 @@ class LinkedList(object):
             else:
                 p = p.next
         return -1
+
+
+if __name__ == '__main__':
+    linklist1 = LinkedList()
+    linklist1.init_list([0,2,4,6,8])
+    print(linklist1.get_length())
+    linklist1.show_linked_list()

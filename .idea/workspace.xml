@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a67d23d1-c8b7-46f7-83fd-194446e09619" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a67d23d1-c8b7-46f7-83fd-194446e09619" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="删除单链表倒数第K个节点.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/链表/删除单链表倒数第K个节点.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="单链表实现.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/链表/单链表实现.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1714" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="翻转单链表.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/链表/翻转单链表.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,8 +42,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="47" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="306" />
+    <option name="y" value="-1079" />
     <option name="width" value="1373" />
     <option name="height" value="899" />
   </component>
@@ -39,6 +59,11 @@
             <path>
               <item name="interview" type="b2602c69:ProjectViewProjectNode" />
               <item name="interview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interview" type="462c0819:PsiDirectoryNode" />
+              <item name="链表" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -88,7 +113,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="0" width="1373" height="899" extended-state="1" />
+    <frame x="306" y="-1079" width="1373" height="899" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917705" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -118,5 +144,18 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/链表/删除单链表倒数第K个节点.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/链表/翻转单链表.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/链表/单链表实现.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1714" />
+      </provider>
+    </entry>
   </component>
 </project>

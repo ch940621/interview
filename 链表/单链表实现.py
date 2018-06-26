@@ -12,8 +12,6 @@ class LinkedList(object):
     def __init__(self):
         self.head = 0  # 头部
 
-    
-
     def __getitem__(self, key):
         if self.is_empty():
             print ('Linked list is empty.')

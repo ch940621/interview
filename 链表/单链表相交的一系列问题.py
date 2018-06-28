@@ -1,3 +1,8 @@
+class Node(object):
+    def __init__(self, value, next=0):
+        self.value = value
+        self.next = next  # 指针
+
 # 判断一个单链表是否有环
 # 思路,快慢指针,慢指针一次走一步,快指针一次走两步,如果有环一定会相交的
 def exit_loop(head):

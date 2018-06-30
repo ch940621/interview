@@ -74,26 +74,25 @@ def zigzag_order_unrecur(head):
     stack2 = Stack()
     stack1.push(head)
     deep = 1
-    while deep % 2 == 1 and not stack1.is_empty():
-        curr = stack1.pop()
-        if curr != None:
-            print(curr.value,'\t')
-            stack2.push(curr.left)
-            stack2.push(curr.right)
-        
-        if stack1.is_empty():
-            print('\n')
-            deep += 1
+    while not stack1.is_empty() or not stack2.is_empty():
+        if deep % 2 == 1 and not stack1.is_empty():
+            curr = stack1.pop()
+            if curr != None:
+                print(curr.value, '\t')
+                stack2.push(curr.left)
+                stack2.push(curr.right)
 
-    while deep % 2 == 0 and not stack2.is_empty():
-        curr = stack2.pop()
-        if curr != None:
-            print(curr.value,'\t')
-            stack1.push(curr.right)
-            stack2.push(curr.left)
+            if stack1.is_empty():
+                print('\n')
+                deep += 1
 
-        if stack2.is_empty():
-            print('\t')
-            deep += 1
+        if deep % 2 == 0 and not stack2.is_empty():
+            curr = stack2.pop()
+            if curr != None:
+                print(curr.value, '\t')
+                stack1.push(curr.right)
+                stack2.push(curr.left)
 
-    
+            if stack2.is_empty():
+                print('\t')
+                deep += 1

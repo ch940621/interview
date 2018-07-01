@@ -1,41 +1,32 @@
 from collections import deque
 
-
 class Stack(object):
     def __init__(self):
         self.items = []
-
     def is_empty(self):
         return self.items == []
-
     def peek(self):
         return self.items[len(self.items) - 1]
-
     def size(self):
         return len(self.items)
-
     def push(self, item):
         self.items.append(item)
-
     def pop(self):
         return self.items.pop()
-
 
 class Queue(object):
     def __init__(self):
         self.items = deque()
-
     def enqueue(self, item):
         self.items.append(item)
-
     def dequeue(self):
         return self.items.popleft()
-
     def size(self):
         return len(self.items)
-
     def is_empty(self):
         return len(self.items) == 0
+    def front(self):
+        return self.items[0]
 
 
 # 两个队列实现栈的思路一就是保持一个队列永远为空,每次入栈入到空的那个,然后那个非空的再一次排过去,模拟了插队 过程也就是有了栈的特点,出栈直接出游元素的那个

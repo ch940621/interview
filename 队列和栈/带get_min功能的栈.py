@@ -1,21 +1,32 @@
+from collections import deque
+
 class Stack(object):
     def __init__(self):
         self.items = []
-
     def is_empty(self):
         return self.items == []
-
     def peek(self):
         return self.items[len(self.items) - 1]
-
     def size(self):
         return len(self.items)
-
     def push(self, item):
         self.items.append(item)
-
     def pop(self):
         return self.items.pop()
+
+class Queue(object):
+    def __init__(self):
+        self.items = deque()
+    def enqueue(self, item):
+        self.items.append(item)
+    def dequeue(self):
+        return self.items.popleft()
+    def size(self):
+        return len(self.items)
+    def is_empty(self):
+        return len(self.items) == 0
+    def front(self):
+        return self.items[0]
 
 # 思路一:用两个栈,第一个栈stack存原始数据,第二个栈stack_min存get_min弹出的
 # 压入 stack的时候判断stack_min是否为空,若为空则同步压入

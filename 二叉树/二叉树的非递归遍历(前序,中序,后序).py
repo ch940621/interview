@@ -1,29 +1,38 @@
+from collections import deque
+
 class Node(object):
     def __init__(self, value=None):
         self.value = value
         self.left = None
         self.right = None
 
-
 class Stack(object):
     def __init__(self):
         self.items = []
-
     def is_empty(self):
         return self.items == []
-
     def peek(self):
         return self.items[len(self.items) - 1]
-
     def size(self):
         return len(self.items)
-
     def push(self, item):
         self.items.append(item)
-
     def pop(self):
         return self.items.pop()
 
+class Queue(object):
+    def __init__(self):
+        self.items = deque()
+    def enqueue(self, item):
+        self.items.append(item)
+    def dequeue(self):
+        return self.items.popleft()
+    def size(self):
+        return len(self.items)
+    def is_empty(self):
+        return len(self.items) == 0
+    def front(self):
+        return self.items[0]
 
 # 非递归前序遍历二叉树
 # 思路就是用栈,栈先压入自己打印完毕弹出,然后在依次压孩子,先压右孩子再压左孩子,每个孩子自己打印完毕弹出后立即压他的两个孩子,没孩子可以压并且栈为空了遍历停止

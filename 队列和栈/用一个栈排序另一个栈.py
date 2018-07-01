@@ -2,24 +2,35 @@
 # 如果cur小于或者等于栈顶元素，则将cur压入help
 # 如何cur大于help的栈顶元素，则将help的元素涿步弹出，逐一压入stack，直到cur小于或等于help的栈顶元素、再将cur压入help
 
+from collections import deque
+
 class Stack(object):
     def __init__(self):
         self.items = []
-
     def is_empty(self):
         return self.items == []
-
     def peek(self):
         return self.items[len(self.items) - 1]
-
     def size(self):
         return len(self.items)
-
     def push(self, item):
         self.items.append(item)
-
     def pop(self):
         return self.items.pop()
+
+class Queue(object):
+    def __init__(self):
+        self.items = deque()
+    def enqueue(self, item):
+        self.items.append(item)
+    def dequeue(self):
+        return self.items.popleft()
+    def size(self):
+        return len(self.items)
+    def is_empty(self):
+        return len(self.items) == 0
+    def front(self):
+        return self.items[0]
 
 def sort_stack_by_stack(stack):
     help = Stack()

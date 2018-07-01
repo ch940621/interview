@@ -1,24 +1,10 @@
 from collections import deque
 
-
 class Node(object):
     def __init__(self, value=None):
         self.value = value
         self.left = None
         self.right = None
-
-
-class Queue(object):
-    def __init__(self):
-        self.items = deque()
-    def enqueue(self, item):
-        self.items.append(item)
-    def dequeue(self):
-        return self.items.popleft()
-    def size(self):
-        return len(self.items)
-    def is_empty(self):
-        return len(self.items) == 0
 
 class Stack(object):
     def __init__(self):
@@ -34,6 +20,19 @@ class Stack(object):
     def pop(self):
         return self.items.pop()
 
+class Queue(object):
+    def __init__(self):
+        self.items = deque()
+    def enqueue(self, item):
+        self.items.append(item)
+    def dequeue(self):
+        return self.items.popleft()
+    def size(self):
+        return len(self.items)
+    def is_empty(self):
+        return len(self.items) == 0
+    def front(self):
+        return self.items[0]
 
 # 二叉树的层次遍历
 # 思路一:用两个队列,第一个队列currentLevel用于存储当前层的结点,第二个队列nextLevel用于存储下一层的结点
@@ -64,7 +63,7 @@ def level_order_unrecur(head):
 # 经过多次思考,蛇形遍历最简单的办法还是用两个栈存
 # 但奇数行先存左孩子,后存右孩子
 # 偶数行先存右孩子,再存左孩子
-# 当前层currentLevel为空时,表示这一层已经遍历完成
+# 当前层的栈为空时,表示这一层已经遍历完成
 # 重复直到遍历完毕即可
 
 def zigzag_order_unrecur(head):

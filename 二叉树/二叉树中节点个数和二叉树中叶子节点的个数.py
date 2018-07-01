@@ -1,5 +1,11 @@
 from collections import deque
 
+class Node(object):
+    def __init__(self, value=None):
+        self.value = value
+        self.left = None
+        self.right = None
+
 class Stack(object):
     def __init__(self):
         self.items = []
@@ -28,20 +34,11 @@ class Queue(object):
     def front(self):
         return self.items[0]
 
-def get_and_remove_last_element(stack):
-    # 得到栈底元素并移除,其他元素压会栈
-    result = stack.pop
-    if stack.is_empty():
-        return result
-    else:
-        last = get_and_remove_last_element(stack)
-        stack.push(result)
-        return last
+# 统计二叉树中节点个数
+# 递归
+def count_nodes_recur(head):
+    if head == None:
+        return 0
+    return count_nodes_recur(head.left) + count_nodes_recur(head.right) + 1
 
-def reverse_stack(stack):
-    if stack.is_empty():
-        return
-    
-    cur = get_and_remove_last_element(stack)
-    reverse_stack(stack)
-    stack.push(cur)
+# 非递归

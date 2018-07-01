@@ -57,7 +57,7 @@ def level_order_unrecur(head):
 
         if curr_level.is_empty:
             print('\n')
-            curr, next_level = next_level, curr
+            curr_level, next_level = next_level, curr_level
 
 # 二叉树的蛇形遍历
 # 经过多次思考,蛇形遍历最简单的办法还是用两个栈存

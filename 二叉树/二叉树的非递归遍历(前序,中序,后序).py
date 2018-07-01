@@ -90,7 +90,7 @@ def pos_order_unrecur(head):
             stack.push(head)
             head = head.left
 
-        if not head.is_empty():
+        if not stack.is_empty():
             tmp = stack.peek() 
 
             if tmp.first_visited:

@@ -50,7 +50,7 @@ def level_order_unrecur(head):
 
     while not curr_level.is_empty():
         curr = curr_level.dequeue()
-        if curr != Node:
+        if curr != None:
             print(curr.value, '\t')
             next_level.enqueue(curr.left)
             next_level.enqueue(curr.right)

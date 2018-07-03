@@ -4,13 +4,7 @@ class Node(object):
         self.value = value
         self.left = None
         self.right = None
-class Node1(object):
-    def __init__(self, value=None):
-        self.value = value
-        self.left = None
-        self.right = None
-        self.max_distance_left = None
-        self.max_distance_right = None
+
 # 计算一个二叉树的最大距离有两个情况：
 
 # 情况A: 路径经过左子树的最深节点，通过根节点，再到右子树的最深节点。
@@ -33,3 +27,28 @@ def get_max_distance(head):
     if cur_distance > max_distance:
         cur_distance,max_distance = max_distance,cur_distance
     return max_distance
+
+
+# 更简洁的写法
+
+def hight(head):
+    if head == None:
+        return 0
+    return max(hight(head.left),hight(head.right)) + 1
+
+def get_max_distance1(head):
+    if head == None:
+        return 0
+
+    left_max_distance = get_max_distance1(head.left)
+    right_max_distance = get_max_distance1(head.right)
+
+    left_hight = 0
+    right_hight = 0
+
+    if head.left != None:
+        left_hight = hight(head.left)
+    if head.right != None:
+        right_hight = hight(head.right)
+
+    return max(left_max_distance,right_max_distance,left_hight+right_hight)

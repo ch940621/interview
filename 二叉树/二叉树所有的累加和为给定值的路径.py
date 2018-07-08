@@ -20,7 +20,6 @@ class Stack(object):
     def pop(self):
         return self.items.pop()
 
-
 class Queue(object):
     def __init__(self):
         self.items = deque()

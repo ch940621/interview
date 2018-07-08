@@ -59,6 +59,8 @@ def level_order_unrecur(head):
             print('\n')
             curr_level, next_level = next_level, curr_level
 
+# 另,如果不用分层,也就是不同层之间不用区分,只需要保证先后关系是层序的,那么一个队列就可以啦
+
 # 二叉树的蛇形遍历
 # 经过多次思考,蛇形遍历最简单的办法还是用两个栈存
 # 但奇数行先存左孩子,后存右孩子

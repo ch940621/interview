@@ -35,24 +35,26 @@ class Queue(object):
         return self.items[0]
 
 
-def path_sum1(head,sum):
-    global path,res
+
+
+def get_path(head,sum):
     path = []
     res = []
-    def search(head,sum):
-        global path,res
-        if head == None or head.value > sum: 
-            return None
-        
-        path.append(head.value)
-        if head.left == None and head.right == None:
-            if head.value == sum:
-                res.append(path)
-        else:
-            search(head.left,sum - head.value)
-            search(head.right,sum - head.right)
-        path.pop()
+    path_sum1(head,sum,path,res)
     return res
+def path_sum1(head,sum,path,res):
+    if head == None or head.value > sum: 
+        return None
+    
+    path.append(head.value)
+    if head.left == None and head.right == None:
+        if head.value == sum:
+            res.append(path)
+    else:
+        path_sum1(head.left,sum - head.value,path,res)
+        path_sum1(head.right,sum - head.right,path,res)
+    path.pop()
+
 
 # 如果要路径最长的,把记录的res长度最大的遍历一下取出来,或者改一下res的结构,在搜索的时候就把长度值也就是二叉树的深度一起存一下
 

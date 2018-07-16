@@ -1,4 +1,4 @@
-# 首先明确下概念,子数字必须连续,子序列相对位置必须不乱
+# 首先明确下概念,子数字必须连续
 
 # 动态规划
 # 用nums代表输入,dp[i]表示nums[i]为结尾的最大和
@@ -16,13 +16,11 @@ def get_max_sum_of_subarray(list1):
 
 print(get_max_sum_of_subarray([-10,-11]))
 
-# 原版的写发其实是,但是Python是弱类型的,获取int最小值
-# 也就是找到一个k,使得任意的max(k,n)=n,比较费劲下面这个min_int并不是真实的int最小值
-import sys
+# -float('inf')为最小的数
 def get_max_sum_of_subarray1(list1):
     if len(list1) == 0:
         return None
-    min_int = - sys.maxsize
+    min_int = -float('inf')
     max_sum = min_int
     cur_sum = min_int
     for i in range(0,len(list1)):

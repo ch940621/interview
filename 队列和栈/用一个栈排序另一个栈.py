@@ -45,4 +45,3 @@ def sort_stack_by_stack(stack):
 
     return stack
 
-    

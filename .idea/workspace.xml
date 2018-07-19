@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a67d23d1-c8b7-46f7-83fd-194446e09619" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数组,递归,字符串/数组中出现次数超过一半的数字和数组中出现次数超过1/k的数字.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/数组,递归,字符串/最长无重复子串.py" beforeDir="false" afterPath="$PROJECT_DIR$/数组,递归,字符串/最长无重复子串.py" afterDir="false" />
-    </list>
+    <list default="true" id="a67d23d1-c8b7-46f7-83fd-194446e09619" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +34,8 @@
       <file leaf-file-name="数组中重复的数字.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/数组,递归,字符串/数组中重复的数字.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="480">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -174,7 +170,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917705" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32917705" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32917705" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32917705" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32917705" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25694966" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -224,8 +220,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/数组,递归,字符串/数组中重复的数字.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>

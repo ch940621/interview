@@ -1,9 +1,3 @@
-## python的ASCII和字符的转换
-# Get the ASCII number of a character
-#number = ord(char)
-## Get the character given by an ASCII number
-# char = chr(number)
-
 # 获取一个字符串的最长无重复子串,返回长度
 # 思路,遍历字符串把字符和对应的位置存入哈希表map,遍历的过程中如果哈希表已经有了,用新的覆盖掉老的
 # 一个初始指针 start = 0 标志子串的开始,子串的长度cur_len = pos - start + 1 被不断被更新

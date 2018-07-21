@@ -36,6 +36,8 @@ def is_legal(str1):
                     stack.pop()
                 else:
                     return False
+        else:
+            return False
 
     return True if stack.is_empty() else False
 
